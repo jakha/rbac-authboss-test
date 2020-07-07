@@ -27,4 +27,5 @@ func handleAuthForm(w http.ResponseWriter) {
 	helpers.Check(err)
 
 	w.Write(data)
+	w.WriteHeader(http.StatusOK)
 }
